@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name = "org.uncommons.reportng.HTMLReporter" />
+		<listener class-name = "org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name = "com.Udemy.listeners.CustomListeners" />
+	</listeners>
+  <test name="BankManagerLogin">
+  		<classes>
+  			<class name = "com.Udemy.testCases.BankManagerLoginTest" />
+  		</classes>
+  
+  </test>
+  
+  <test name="AddCustomer">
+  		<classes>
+  			<class name = "com.Udemy.testCases.AddCustomerTest" />
+  		</classes>
+  
+  </test>
+  
+  <test name="OpenCustomerAccount">
+  		<classes>
+  			<class name = "com.Udemy.testCases.OpenCustomerAccount" />
+  		</classes>
+  
+  </test>
+  <!-- Test -->
+</suite> <!-- Suite -->
